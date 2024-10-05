@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Notes Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>School Notes Manager</h1>
+        <form id="notes-form" method="POST" enctype="multipart/form-data">
+            <div class="subject-select">
+                <label for="subject">Choose a Subject:</label>
+                <select name="subject" id="subject">
+                    <option value="science">Science</option>
+                    <option value="math">Math</option>
+                    <option value="history">History</option>
+                </select>
+            </div>
+            <div class="upload-section">
+                <input type="file" name="file" required>
+                <button type="submit">Upload</button>
+            </div>
+        </form>
+        <div class="download-section">
+            <h2>Download Notes</h2>
+            <ul id="file-list">
+                <!-- File list will be populated here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

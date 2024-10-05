@@ -1,0 +1,154 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Subject Selection */
+.subject-select {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Upload Section */
+.upload-section, .download-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="file"] {
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Notes List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #e2e2e2;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.file-name {
+    flex: 2; /* Allow the filename to take up 2/3 of the space */
+    padding-right: 10px; /* Add space between the filename and buttons */
+}
+
+.download-link {
+    background-color: #007bff; /* Same blue color as delete */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+    max-width: 120px; /* Adjust width */
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Space between the file name and download button */
+}
+
+.download-link:hover {
+    background-color: #0056b3; /* Same hover effect */
+}
+
+/* Delete Button Styling */
+li button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 120px; /* Same width as download button */
+    margin-left: 10px; /* Space between buttons */
+}
+
+li button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li button, li .download-link {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
